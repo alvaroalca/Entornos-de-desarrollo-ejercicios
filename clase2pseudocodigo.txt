@@ -1,0 +1,51 @@
+clase 2 pseudocodigo
+INICIO
+    Definir lista_tareas como lista vacía
+    
+    Mientras True:
+        Mostrar menú
+        Leer opción
+        
+        Si opción es 1:  // Agregar tarea
+            Leer título, descripción, fecha, prioridad
+            Validar fecha y prioridad
+            Si son válidos:
+                Crear tarea con estado pendiente y agregarla a lista_tareas
+                Mostrar "Tarea agregada"
+        
+        Si opción es 2:  // Listar tareas
+            Si lista_tareas está vacía:
+                Mostrar "No hay nada"
+            Sino:
+                Mostrar todas las tareas
+        
+        Si opción es 3:  // Buscar tarea
+            Leer palabra_clave
+            Para cada tarea en lista_tareas:
+                Si palabra_clave está en título o descripción:
+                    Mostrar tarea
+        
+        Si opción es 4:  // Actualizar estado
+            Leer título_tarea
+            Buscar tarea
+            Si existe:
+                Leer nuevo_estado (completada o pendiente)
+                Actualizar tarea con nuevo estado
+                Mostrar "Estado actualizado"
+            Sino:
+                Mostrar "Tarea no existe"
+        
+        Si opción es 5:  // Eliminar tarea
+            Leer título_tarea
+            Buscar tarea
+            Si existe:
+                Eliminar tarea
+                Mostrar "Tarea eliminada"
+            Sino:
+                Mostrar "Tarea no existe"
+        
+        Si opción es 6:  // Salir
+            Mostrar "Chao"
+            Salir
+
+FIN
